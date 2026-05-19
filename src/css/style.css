@@ -2,7 +2,7 @@
     --cor-preta: #000000;
     --cor-branca: #ffffff;
     --cor-principal: #00c8ff;
-    --fonte-titulo: "Verdana", sans-serif;
+    --fonte: "Verdana", sans-serif;
 }
 
 * {
@@ -28,7 +28,7 @@
     overflow: hidden;
 }
 
-#logo {
+#imgHero {
     color: var(--cor-branca);
     font-size: 8rem;
     animation:rodar 1.5s ease-in-out;
@@ -36,19 +36,21 @@
 
 #titulo {
     color: var(--cor-branca);
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte);
     font-size: 2.6rem;
 }
 
 #titulo span{
     color: var(--cor-principal);
     text-shadow: 0 0 20px #00c8ff, 0 0 40px #00c8ff44;
+    font-family: var(--fonte);
     font-size: 2.6rem;
 }
 
 #tagline {
     color: var(--cor-branca);
     animation:efeito 2s ease-in-out;
+    font-family: var(--fonte);
 }
 
 @keyframes rodar{
@@ -67,4 +69,62 @@
     to{
         opacity:0.8;
     }
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: var(--cor-preta);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px 40px;
+    font-family: var(--fonte);
+    font-weight: 500;
+}
+
+#logo {
+    color: var(--cor-branca);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo-texto {
+    font-size: 1.8rem;
+    margin-top: 9px;
+}
+
+#logo-texto span {
+    font-size: 1.8rem;
+    margin-top: 9px;
+    color: var(--cor-principal);
+    text-shadow: 0 0 20px #00c8ff, 0 0 40px #00c8ff44;
+}
+
+a span {
+    font-size: 4rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+header nav ul li a:hover {
+    color: var(--cor-principal);
 }
