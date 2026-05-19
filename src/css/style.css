@@ -1,0 +1,70 @@
+:root {
+    --cor-preta: #000000;
+    --cor-branca: #ffffff;
+    --cor-principal: #00c8ff;
+    --fonte-titulo: "Verdana", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#inicio {
+    background: var(--cor-preta);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    gap: 15px;
+    overflow: hidden;
+}
+
+#logo {
+    color: var(--cor-branca);
+    font-size: 8rem;
+    animation:rodar 1.5s ease-in-out;
+}
+
+#titulo {
+    color: var(--cor-branca);
+    font-family: var(--fonte-titulo);
+    font-size: 2.6rem;
+}
+
+#titulo span{
+    color: var(--cor-principal);
+    text-shadow: 0 0 20px #00c8ff, 0 0 40px #00c8ff44;
+    font-size: 2.6rem;
+}
+
+#tagline {
+    color: var(--cor-branca);
+    animation:efeito 2s ease-in-out;
+}
+
+@keyframes rodar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes efeito{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:0.8;
+    }
+}
