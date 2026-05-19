@@ -8,5 +8,5 @@ window.onload = function() {
             content.classList.remove("hidden");
             content.classList.add("efeito-in");
         }, 1000);
-    }, 3000);
+    }, 2000);
 }
