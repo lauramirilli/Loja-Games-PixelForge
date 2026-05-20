@@ -1,0 +1,105 @@
+#portfolio {
+    background: var(--cor-preta);
+    padding: 120px 40px 60px;
+}
+
+.titulo-categoria {
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    text-shadow: 0 0 20px #00c8ff, 0 0 40px #00c8ff44;
+}
+
+.categoria-produtos {
+    margin-bottom: 60px;
+}
+
+/* BADGE DE PROMOÇÃO */
+.card-produto {
+    position: relative;
+}
+
+.card-produto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.badge-promo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--cor-principal);
+    color: var(--cor-preta);
+    font-family: var(--fonte);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.card-produto.destaque {
+    border-color: var(--cor-principal);
+}
+
+/* TABELA */
+#tabela-precos {
+    margin-top: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--fonte);
+}
+
+thead tr {
+    background: var(--cor-principal);
+}
+
+thead th {
+    color: var(--cor-preta);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 20px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #1a1a1a;
+    transition: background 0.2s;
+}
+
+tbody tr:hover {
+    background: #111;
+}
+
+tbody td {
+    color: #aaa;
+    font-size: 0.9rem;
+    padding: 14px 20px;
+}
+
+.preco-tabela {
+    color: var(--cor-branca) !important;
+    font-weight: 700;
+}
+
+.disponivel {
+    color: #00ff88 !important;
+}
+
+.indisponivel {
+    color: #ff4444 !important;
+}
+
+/* SEÇÃO PROMOÇÕES */
+#promocoes {
+    margin-bottom: 60px;
+}
