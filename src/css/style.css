@@ -1,8 +1,9 @@
 :root {
     --cor-preta: #000000;
+    --cor-preta-op: #00000053;
     --cor-branca: #ffffff;
     --cor-principal: #00c8ff;
-    --cor-secundaria: #00c8ff44;
+    --cor-secundaria: #0084a9;
     --fonte: "Verdana", sans-serif;
 }
 
@@ -198,5 +199,47 @@ header nav ul li a:hover {
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 0 30px var(--cor-principal)
+    box-shadow: 0 0 50px var(--cor-principal)
 }
+
+#categorias {
+    padding: 60px 80px;
+}
+
+#categorias h2 {
+    font-family: var(--fonte);
+    font-size: 1.9rem;
+    color: var(--cor-principal);
+    margin-bottom: 60px;
+}
+
+#categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 180px;
+}
+
+.categoria-card {
+    background: var(--cor-branca);
+    border: 1px solid var(--cor-preta-op);
+    border-radius: 12px;
+    padding: 40px 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--fonte);
+    font-size: 1.1rem;
+    color: var(--cor-preta);
+    text-decoration: none;
+    transition: border-color .2s, transform .2s, color .2s;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.categoria-card:hover {
+    border-color: var(--cor-secundaria);
+    transform: translateY(-4px);
+    color: var(--cor-secundaria);
+    box-shadow: 0px 8px 24px rgba(61, 180, 249, 0.15);
+}
+
