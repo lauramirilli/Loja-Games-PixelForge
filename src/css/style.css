@@ -2,6 +2,7 @@
     --cor-preta: #000000;
     --cor-branca: #ffffff;
     --cor-principal: #00c8ff;
+    --cor-secundaria: #00c8ff44;
     --fonte: "Verdana", sans-serif;
 }
 
@@ -96,6 +97,10 @@ header {
     gap: 10px;
 }
 
+#desenho-logo:hover{
+    animation:rodar 1.5s ease-in-out;   
+}
+
 #logo-texto {
     font-size: 1.8rem;
     margin-top: 9px;
@@ -128,4 +133,70 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--cor-principal);
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    margin-top: 100px; /* altura do header fixo */
+    gap: 40px;
+    background: linear-gradient(90deg, #001a2a 0%, #000000 50%, #001a2a 100%);
+}
+
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+}
+
+.banner-texto span {
+    color: var(--cor-principal);
+}
+
+.banner-texto h2 {
+    font-family: var(--fonte);
+    font-size: 3.5rem;
+    color: var(--cor-branca);
+    line-height: 1.3;
+    letter-spacing: 2px;
+}
+
+.banner-texto p {
+    font-family: var(--fonte);
+    color: var(--cor-branca);
+    font-size: 1rem;
+}
+
+.banner-texto p span{
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 1rem;
+}
+
+.btn-banner {
+    display: inline-block;
+    padding: 14px 32px;
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-weight: 700;
+    border-radius: 10px;
+    width: fit-content;
+    transition: opacity 0.3s;
+    background: var(--cor-principal);
+}
+
+.btn-banner:hover {
+    opacity: 0.8;
+}
+
+.banner-imagem img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 30px var(--cor-principal)
 }
