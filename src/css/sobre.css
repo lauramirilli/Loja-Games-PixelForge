@@ -94,3 +94,43 @@
     color: var(--cor-preta);
     cursor: default;
 }
+
+@media (max-width: 768px) {
+
+    #sobre-hero {
+        padding: 60px 20px;
+    }
+
+    #sobre-hero-texto h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .sobre-secao {
+        padding: 50px 20px;
+    }
+
+    .sobre-bloco h2 {
+        font-size: 1.4rem;
+    }
+
+    .skills-grid {
+        gap: 8px;
+    }
+
+    .skill {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #sobre-hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-bloco p {
+        font-size: 0.95rem;
+    }
+}

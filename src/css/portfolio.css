@@ -103,3 +103,53 @@ tbody td {
 #promocoes {
     margin-bottom: 60px;
 }
+
+@media (max-width: 768px) {
+
+    #portfolio {
+        padding: 120px 20px 60px;
+    }
+
+    .titulo-categoria {
+        font-size: 1.2rem;
+    }
+
+    .grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* TABELA */
+    #tabela-precos {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    /* PROMOÇÕES */
+    #promocoes .grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    #promocoes .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    thead th {
+        font-size: 0.75rem;
+        padding: 10px 12px;
+    }
+
+    tbody td {
+        font-size: 0.8rem;
+        padding: 10px 12px;
+    }
+}

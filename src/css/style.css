@@ -489,3 +489,82 @@ footer {
     color: #444;
     font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 16px 20px;
+        height: auto;
+    }
+
+    /* HERO INTRO */
+    #inicio {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #titulo {
+        font-size: 1.8rem;
+    }
+
+    /* BANNER PRINCIPAL */
+    #banner {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .banner-texto {
+        align-items: center;
+    }
+
+    .banner-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner-imagem img {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* CATEGORIAS */
+    #categorias-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* PRODUTOS */
+    .grid-produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* BANNER SECUNDÁRIO */
+    #banner-secundario {
+        padding: 60px 20px;
+    }
+
+    #banner-secundario h2 {
+        font-size: 1.8rem;
+    }
+
+    /* NEWSLETTER */
+    .form-newsletter {
+        flex-direction: column;
+    }
+
+    .form-newsletter input {
+        border-right: 1px solid #333;
+        border-radius: 4px;
+    }
+
+    .form-newsletter button {
+        border-radius: 4px;
+    }
+
+    /* FOOTER */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
