@@ -48,14 +48,6 @@
     max-width: 800px;
 }
 
-.sobre-label {
-    font-family: var(--fonte);
-    color: var(--cor-principal);
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-}
-
 .sobre-bloco h2 {
     font-family: var(--fonte);
     color: var(--cor-branca);

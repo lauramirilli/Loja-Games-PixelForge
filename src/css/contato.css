@@ -1,0 +1,141 @@
+#contato {
+    background: var(--cor-preta);
+    padding-top: 100px;
+}
+
+/* HERO */
+#contato-hero {
+    padding: 80px 40px;
+    border-bottom: 1px solid #00c8ff22;
+    background: linear-gradient(135deg, #001a2a 0%, #000000 50%, #001a2a 100%);
+}
+
+#contato-hero h1 {
+    font-family: var(--fonte);
+    font-size: 4rem;
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 8px 0;
+}
+
+#contato-hero h1 span {
+    color: var(--cor-principal);
+    text-shadow: 0 0 20px #00c8ff, 0 0 40px #00c8ff44;
+}
+
+.contato-subtitulo {
+    font-family: var(--fonte);
+    color: #666;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+/* CONTEÚDO */
+#contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px 40px;
+    max-width: 1100px;
+}
+
+/* INFORMAÇÕES */
+#contato-info h2,
+#contato-form h2 {
+    font-family: var(--fonte);
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.info-icon {
+    font-size: 1.4rem;
+    margin-top: 2px;
+}
+
+.info-titulo {
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.info-valor {
+    font-family: var(--fonte);
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* FORMULÁRIO */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 14px 16px;
+    color: var(--cor-branca);
+    font-family: var(--fonte);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: var(--cor-principal);
+}
+
+.form-grupo input::placeholder,
+.form-grupo textarea::placeholder {
+    color: #444;
+}
+
+#btn-enviar {
+    width: 100%;
+    padding: 16px;
+    background: var(--cor-principal);
+    color: var(--cor-preta);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-top: 8px;
+}
+
+#btn-enviar:hover {
+    opacity: 0.8;
+}
